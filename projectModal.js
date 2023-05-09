@@ -16,7 +16,7 @@ for (var i = 0; i < closeButtons.length; i++) {
 // Get the modals
 var modals = document.getElementsByClassName("modal");
 
-// When the user clicks anywhere outside of the modal, close it
+// When the user clicks anywhere outside of the modal content, close it
 for (var i = 0; i < modals.length; i++) {
     modals[i].addEventListener("click", function(event) {
         if (event.target == this) {
