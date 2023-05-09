@@ -9,7 +9,7 @@ var closeButtons = document.getElementsByClassName("close");
 // Add an event listener to each close button to close the modal
 for (var i = 0; i < closeButtons.length; i++) {
     closeButtons[i].addEventListener("click", function() {
-        this.parentElement.parentElement.parentElement.style.display = "none";
+        this.closest(".modal").style.display = "none";
     });
 }
 
