@@ -1,0 +1,33 @@
+/* filter */
+/* Hide columns by default */
+.filter {
+    display: none;
+}
+
+/* The "show" class is added to the filtered elements */
+.filter-show {
+    display: block;
+}
+
+/* Style the buttons */
+#myBtnContainer .btn {
+    border: 1px solid orange;
+    outline: none;
+    margin: 5px 2px;
+    padding: 2px 8px;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+#myBtnContainer .btn:hover {
+    background-color: gold;
+    border: 1px solid white;
+}
+
+/* Add a dark background color to the active button */
+#myBtnContainer .btn.active {
+    background-color: goldenrod;
+    color: white;
+    border: 1px solid goldenrod;
+}
