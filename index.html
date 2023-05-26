@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Man Tin's Portfolio">
+    <title>Man Tin | Frontend Developer</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <!-- Bootstrap 5 Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS for Portfolio -->
+    <link rel="stylesheet" href="portfolio.css">
+
+    <!-- CSS for Project Filter -->
+    <link rel="stylesheet" href="projectFilter.css">
+
+    <!-- JavaScript for Project Modals-->
+    <script defer src="projectModal.js" charset="utf-8"></script>
+
+    <!-- JavaScript for Project Filter-->
+    <script defer src="projectFilter.js" charset="utf-8"></script>
+
+    <!-- Bootstrap 5 Latest compiled JavaScript -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome -->
+    <script defer src="https://kit.fontawesome.com/b406833c6d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="card-container">
+        <!-- Introduction -->
+        <section class="introduction">
+            <div class="container-fluid center">
+                <h1 class="pt-5 pb-2">Frontend Developer</h1>
+                <img class="mt-3 mb-3" src="images/propic.png" alt="Man Tin's Profile Picture" title="Hi there!">
+                <h2 class="mt-4">Hi, I'm Man Tin. Nice to meet you.</h2>
+                <p>As a passionate web developer, I am dedicated to creating engaging and intuitive websites. While my
+                    experience with WordPress is relatively recent, I have successfully utilized it in building my
+                    portfolio website. With a solid understanding of HTML, CSS, JavaScript, and Bootstrap5, I have
+                    acquired the technical expertise necessary to deliver high-quality web development projects. Drawing
+                    upon my creativity and problem-solving skills, I strive to design and develop visually stunning and
+                    responsive websites that offer an exceptional user experience. I am committed to continuously
+                    enhancing my web development skills and keeping abreast of the latest trends and technologies to
+                    consistently deliver exceptional work.</p>
+            </div>
+        </section>
+        <hr>
+
+        <!-- Projects -->
+        <section class="projects">
+            <div class="container-fluid">
+                <div class="project-header center mt-5 mb-4">
+                    <h1>My Latest Projects</h1>
+                    <img src="images/feather.png" alt="gold feather">
+                </div>
+
+                <!-- apply filter to projects -->
+                <div class="ms-4 mb-4">
+                    <p class="mt-sm-3 mb-sm-4">Showing all projects. Use the filter to list them by skills and
+                        technology.</p>
+                    <div id="myBtnContainer">
+                        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                        <button class="btn" onclick="filterSelection('html5')"> HTML5</button>
+                        <button class="btn" onclick="filterSelection('css3')"> CSS3</button>
+                        <button class="btn" onclick="filterSelection('javascript')"> Javascript</button>
+                        <button class="btn" onclick="filterSelection('bootstrap5')"> Bootstrap5</button>
+                        <button class="btn" onclick="filterSelection('wordpress')"> Wordpress</button>
+                        <button class="btn" onclick="filterSelection('responsive')"> Responsive Web Design</button>
+                    </div>
+                </div>
+
+                <div class="row mt-sm-5 mb-lg-5 ms-1 me-1">
+                    <!-- R2Place -->
+                    <div class="col-lg-4 col-md-6 mb-sm-5 mb-3 filter html5 css3 javascript bootstrap5 responsive">
+                        <div class="project-container" onclick="openModal(event, 'r2Place');">
+                            <img src="images/r2place.jpeg" alt="R2 Place">
+                            <div class="img-description">
+                                <h3>R2 Place</h3>
+                                <hr>
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Bootstrap5</span>
+                                <span class="tag">Responsive Web Design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- R2 Place Modal -->
+                    <div id="r2Place" class="modal">
+                        <!-- R2Place Modal content -->
+                        <div class="modal-content">
+                            <div class="row">
+                                <div class="col-lg-8 d-flex align-items-center">
+                                    <a href="https://mtw72.github.io/r2place/" target="_blank"><img
+                                            src="images/r2place-screenshot.png" alt="Website of R2 Place"
+                                            title="Website of R2 Place" class="modal-content-image"></a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <h2 class="mt-3 mb-1 modal-content-heading">R2 Place</h2>
+                                    <p>Web Design / Development</p>
+                                    <p>A virtual restaurant website with visually appealing features like stylish
+                                        typography and mouth-watering food photos.</p>
+                                    <p class="mb-4">The website includes a fixed top navigation bar for easy access,
+                                        along with an interactive menu that allows customers to explore the tempting
+                                        dishes. Plus, a user-friendly reservation form makes booking a table a breeze.
+                                    </p>
+                                    <a href="https://mtw72.github.io/r2place/" target="_blank">
+                                        <button class="btn bg-dark text-light w-100 mb-4">Visit Website</button>
+                                    </a><br>
+                                </div>
+                                <button class="close">&times;</button> <!-- close button -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- APP Building Consultancy Limited -->
+                    <div class="col-lg-4 col-md-6 mb-sm-5 mb-3 filter html5 css3 javascript bootstrap5 responsive">
+                        <div class="project-container" onclick="openModal(event, 'app');">
+                            <img src="images/app-logo.jpg" alt="APP Building Consultancy Limited">
+                            <div class="img-description">
+                                <h3>APP&nbsp;Building Consultancy&nbsp;Limited</h3>
+                                <hr>
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Bootstrap5</span>
+                                <span class="tag">Responsive Web Design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- APP Modal -->
+                    <div id="app" class="modal">
+                        <!-- APP content -->
+                        <div class="modal-content">
+                            <div class="row">
+                                <div class="col-lg-8 d-flex align-items-center">
+                                    <a href="https://appbuildingconsultancylimited.com/" target="_blank"><img
+                                            src="images/app-screenshot.png"
+                                            alt="Website of APP Building Consultancy Limited"
+                                            title="Website of APP Building Consultancy Limited"
+                                            class="modal-content-image"></a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <h2 class="mt-3 mb-1 modal-content-heading">APP Building Consultancy Limited</h2>
+                                    <p>Web Design / Development</p>
+                                    <p>Since the establishment in 2016, APP Building Consultancy Limited has provided
+                                        professional building surveying consultancy services in Hong Kong.</p>
+                                    <p class="mb-4">The website provides a comprehensive overview of the company,
+                                        including their
+                                        background, scope of services, and project portfolio.</p>
+                                    <a href="https://appbuildingconsultancylimited.com/" target="_blank">
+                                        <button class="btn bg-dark text-light w-100 mb-4">Visit Website</button>
+                                    </a>
+                                </div>
+                                <button class="close">&times;</button> <!-- close button -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MT's Homepage -->
+                    <div class="col-lg-4 col-md-6 mb-sm-5 mb-3 filter html5 css3 javascript bootstrap5 responsive">
+                        <div class="project-container" onclick="openModal(event, 'mtHomepage');">
+                            <img src="images/mt-homepage.png" alt="MT's Homepage">
+                            <h3 class="mt-homepage">MT's&nbsp;Homepage</h3>
+                            <div class="img-description">
+                                <h3>MT's&nbsp;Homepage</h3>
+                                <hr>
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Bootstrap5</span>
+                                <span class="tag">Responsive Web Design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MT's Homepage Modal -->
+                    <div id="mtHomepage" class="modal">
+                        <!-- MT's Homepage content -->
+                        <div class="modal-content">
+                            <div class="row">
+                                <div class="col-lg-8 d-flex align-items-center">
+                                    <a href="https://mtw72.github.io/mt.homepage/" target="_blank">
+                                        <img src="images/mt-homepage-screenshot.png" alt="Website of Man Tin's Homepage"
+                                            title="Website of Man Tin's Homepage" class="modal-content-image"></a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <h2 class="mt-3 mb-1 modal-content-heading">Man Tin's Homepage</h2>
+                                    <p>Web Design / Development</p>
+                                    <p>A perfect all-in-one tool for staying informed and organized.</p>
+                                    <p class="mb-4">The website provides up-to-date weather information, real-time
+                                        transportation updates, and the latest local and world news. A handy to-do list
+                                        with local storage property is also included
+                                        for easy management of the daily tasks.</p>
+                                    <a href="https://mtw72.github.io/mt.homepage/" target="_blank">
+                                        <button class="btn bg-dark text-light w-100 mb-4">Visit Website</button>
+                                    </a>
+                                </div>
+                                <button class="close">&times;</button> <!-- close button -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Explore UK - Merseyside -->
+                    <div class="col-lg-4 col-md-6 mb-sm-5 mb-3 filter html5 css3 javascript wordpress responsive">
+                        <div class="project-container" onclick="openModal(event, 'merseyside');">
+                            <img src="images/exploreuk-merseyside.jpg" alt="Explore UK - Merseyside">
+                            <div class="img-description">
+                                <h3>Explore UK - Merseyside</h3>
+                                <hr>
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Wordpress</span>
+                                <span class="tag">Responsive Web Design</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Explore UK - Merseyside Modal -->
+                    <div id="merseyside" class="modal">
+                        <!-- Explore UK - Merseyside Modal content -->
+                        <div class="modal-content">
+                            <div class="row">
+                                <div class="col-lg-8 d-flex align-items-center">
+                                    <a href="https://mtw72.github.io/exploreuk-merseyside/" target="_blank"><img
+                                            src="images/exploreuk-merseyside-screenshot.png"
+                                            alt="Website of Explore UK - Merseyside"
+                                            title="Website of Explore UK - Merseyside" class="modal-content-image"></a>
+                                </div>
+                                <div class="col-lg-4">
+                                    <h2 class="mt-3 mb-1 modal-content-heading">Explore UK - Merseyside</h2>
+                                    <p>Web Design / Development</p>
+                                    <p>Discover the captivating beauty of the United Kingdom with Explore UK. We've
+                                        uncovered hidden gems along Merseyside and can't wait to share them. </p>
+                                    <p>Be part of our journey as we unveil enchanting landscapes and
+                                        cultural treasures in this remarkable region.
+                                    </p>
+                                    <p class="mb-4" style="font-size: 0.9rem;"> (P.S. Website was created using
+                                        Elementor with Astra Theme in WordPress)
+                                    </p>
+                                    <a href="https://mtw72.github.io/exploreuk-merseyside/" target="_blank">
+                                        <button class="btn bg-dark text-light w-100 mb-4">Visit Website</button>
+                                    </a><br>
+                                </div>
+                                <button class="close">&times;</button> <!-- close button -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- add new projects here -->
+                    <!-- Coming Soon -->
+                    <div class="col-lg-4 mb-3 filter coming-soon">
+                        <img src="images/comingsoon.png" alt="Coming Soon">
+                    </div>
+
+                    <!-- Coming Soon -->
+                    <div class="col-lg-4 mb-3 filter coming-soon">
+                        <img src="images/comingsoon.png" alt="Coming Soon">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <hr>
+        <footer class="pt-4 pb-3">
+            <div class="container-fluid center">
+                <p>Need help with a project or want to discuss a potential collaboration?</p>
+                <p>Feel free to contact me via email at <a href="mailto:mtwong72@gmail.com">mtwong72@gmail.com</a>.
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
