@@ -16,4 +16,5 @@ This website showcases Man Tin's portfolio of website creations. It features a r
   <li>JavaScript</li>
   <li>Bootstrap5</li>
   <li>WordPress</li>
+  <li>Git</li>
  </ul>
